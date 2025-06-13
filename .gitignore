@@ -1,0 +1,49 @@
+# Gradle files
+.gradle/
+build/
+*.lock
+
+# Log/OS Files
+*.log
+
+# Android Studio generated files and folders
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+output.json
+
+# IntelliJ
+*.iml
+.idea/
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# Keystore files
+*.jks
+*.keystore
+
+
+# Android Profiling
+*.hprof
+
+# Node Module
+node_modules
+package-lock.json
+
+# for IOS File
+Pods
+Podfile.lock
+
+# for stroge file
+*.DS_Store
+
+
+# for ios build file
+build
+.xcworkspace
+
+# for any editor extention file
+.vscode
+.idea
