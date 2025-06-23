@@ -1,6 +1,6 @@
 // MyProfile Main component will appear here
 import React from 'react';
-import { SafeAreaView, ScrollView, StyleSheet, View } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
 import ProfileHeader from '../../sections/ProfileHeader';
 import ApplicationsPage from './sub-component/Applications';
 import SettingsPage from './sub-component/Settings';
@@ -9,7 +9,6 @@ import CustomTab from '../../components/CustomTab';
 import VirtualizedView from '../../components/VirtualizedView';
 import ASView from '../../components/ASView';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-
 
 
 const MyProfile: React.FC = () => {

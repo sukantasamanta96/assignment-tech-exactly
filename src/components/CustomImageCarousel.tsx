@@ -557,3 +557,20 @@ const CustomImageCarousel: React.FC<CustomCarouselProps> = ({
 };
 
 export default CustomImageCarousel;
+
+
+{/**
+  Example
+  
+      const productImages = [
+          'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=600',
+          'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=600',
+          'https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&h=600',
+      ];
+        
+      <CustomImageCarousel
+          data={productImages}
+          height={200}
+      />
+      
+  */}
