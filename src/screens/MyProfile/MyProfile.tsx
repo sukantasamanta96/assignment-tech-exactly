@@ -7,6 +7,10 @@ import SettingsPage from './sub-component/Settings';
 import { COLOR } from '../../constants/color_code';
 import CustomTab from '../../components/CustomTab';
 import VirtualizedView from '../../components/VirtualizedView';
+import ASView from '../../components/ASView';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+
+
 
 const MyProfile: React.FC = () => {
     // Tab Items here
@@ -24,21 +28,23 @@ const MyProfile: React.FC = () => {
     ];
 
     return (
-        <SafeAreaView style={styles.container}>
-            <VirtualizedView>
-                <ScrollView
-                    showsVerticalScrollIndicator={false}
-                    showsHorizontalScrollIndicator={false}>
-                    <ProfileHeader />
-                    <View style={styles.tabContainer}>
-                        <CustomTab
-                            tabs={tabs}
-                            initialTab="applications"
-                        />
-                    </View>
-                </ScrollView>
-            </VirtualizedView>
-        </SafeAreaView>
+        <SafeAreaProvider>
+            <ASView safeArea style={styles.container}>
+                <VirtualizedView>
+                    <ScrollView
+                        showsVerticalScrollIndicator={false}
+                        showsHorizontalScrollIndicator={false}>
+                        <ProfileHeader />
+                        <View style={styles.tabContainer}>
+                            <CustomTab
+                                tabs={tabs}
+                                initialTab="applications"
+                            />
+                        </View>
+                    </ScrollView>
+                </VirtualizedView>
+            </ASView>
+        </SafeAreaProvider>
     );
 };
 
