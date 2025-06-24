@@ -1,6 +1,6 @@
 // MyProfile Main component will appear here
-import React from 'react';
-import { ScrollView, StyleSheet, View } from "react-native";
+import React, { useEffect } from 'react';
+import { NativeModules, ScrollView, StyleSheet, View } from "react-native";
 import ProfileHeader from '../../sections/ProfileHeader';
 import ApplicationsPage from './sub-component/Applications';
 import SettingsPage from './sub-component/Settings';
@@ -9,9 +9,13 @@ import CustomTab from '../../components/CustomTab';
 import VirtualizedView from '../../components/VirtualizedView';
 import ASView from '../../components/ASView';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+// const { MyNativeModule } = NativeModules;
 
 
 const MyProfile: React.FC = () => {
+    // useEffect(() => {
+    //     MyNativeModule.showToast('Hello from Kotlin!');
+    // }, [])
     // Tab Items here
     const tabs = [
         {
